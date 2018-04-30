@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.6;net47</TargetFrameworks>
+    <Authors>Sakher</Authors>
+    <Company></Company>
+    <Product>BatchProcessor</Product>
+    <Description>Internal package for BatchProcessor.</Description>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>BatchProcessor.Logging</PackageId>
+	<PackageOutputPath>../nug-all</PackageOutputPath>
+    <Copyright>TBC</Copyright>
+    <Version>1.1.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog.Extensions.Logging" Version="1.4.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="3.2.0" />
+    <PackageReference Include="Serilog.Sinks.RollingFile" Version="3.3.1-dev-00767" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TestCore\BatchProcessorConfig\BatchProcessor.Config.csproj" />
+  </ItemGroup>
+
+</Project>

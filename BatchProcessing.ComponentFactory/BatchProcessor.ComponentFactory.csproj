@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.6;net47</TargetFrameworks>
+    <Authors>Sakher</Authors>
+    <Company></Company>
+    <Product>BatchProcessor</Product>
+    <Description>Internal package for BatchProcessor.</Description>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>BatchProcessor.ComponentFactory</PackageId>
+	<PackageOutputPath>../nug-all</PackageOutputPath>
+    <Copyright>TBC</Copyright>
+    <Version>1.1.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="1.1.1" />
+    <PackageReference Include="System.Threading.Tasks.Parallel" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BatchProcessing.Logger\BatchProcessor.Logging.csproj" />
+    <ProjectReference Include="..\TestCore\BatchProcessor.Model\BatchProcessor.Model.csproj" />
+    <ProjectReference Include="..\TestCore\BatchProcessorConfig\BatchProcessor.Config.csproj" />
+  </ItemGroup>
+
+</Project>

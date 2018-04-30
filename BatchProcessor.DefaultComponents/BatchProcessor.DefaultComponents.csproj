@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.6;net47</TargetFrameworks>
+    <Authors>Sakher</Authors>
+    <Company></Company>
+    <Product>BatchProcessor</Product>
+    <Description>Default implementation of Batch Processor components (local, filesystem / memory based).</Description>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>BatchProcessor.DefaultComponents</PackageId>
+	<PackageOutputPath>../nug-all</PackageOutputPath>
+    <Copyright>TBC</Copyright>
+    <Version>1.1.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BatchProcessing.Logger\BatchProcessor.Logging.csproj" />
+    <ProjectReference Include="..\TestCore\BatchProcessor.Model\BatchProcessor.Model.csproj" />
+    <ProjectReference Include="..\TestCore\BatchProcessorConfig\BatchProcessor.Config.csproj" />
+  </ItemGroup>
+
+</Project>

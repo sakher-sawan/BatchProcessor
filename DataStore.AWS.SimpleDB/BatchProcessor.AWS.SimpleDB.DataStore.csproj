@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.6;net47</TargetFrameworks>
+    <Authors>Sakher</Authors>
+    <Company></Company>
+    <Product>BatchProcessor</Product>
+    <Description>NOT IMPLEMENTED YET</Description>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>BatchProcessor.AWS.SimpleDB.DataStore</PackageId>
+	<PackageOutputPath>../nug-all</PackageOutputPath>
+    <Copyright>TBC</Copyright>
+    <Version>1.1.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.SimpleDB" Version="3.3.0.17" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TestCore\BatchProcessor.Model\BatchProcessor.Model.csproj" />
+    <ProjectReference Include="..\TestCore\BatchProcessorConfig\BatchProcessor.Config.csproj" />
+  </ItemGroup>
+
+</Project>

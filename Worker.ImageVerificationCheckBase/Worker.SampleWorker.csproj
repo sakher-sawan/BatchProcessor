@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.6;net47</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TestCore\BatchProcessingClient.Interface\BatchProcessor.Client.csproj" />
+    <ProjectReference Include="..\TestCore\BatchProcessor.Model\BatchProcessor.Model.csproj" />
+  </ItemGroup>
+
+</Project>

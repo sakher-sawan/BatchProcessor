@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.6;net47</TargetFrameworks>
+    <Authors>Sakher</Authors>
+    <Company></Company>
+    <Product>BatchProcessor</Product>
+    <Description>WorkQueue implementation using AWS SQS (Simple Queue Service).</Description>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>BatchProcessor.AWS.SQS.WorkQueue</PackageId>
+	<PackageOutputPath>../../nug-all</PackageOutputPath>
+    <Copyright>TBC</Copyright>
+    <Version>1.1.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.SQS" Version="3.3.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\BatchProcessing.Logger\BatchProcessor.Logging.csproj" />
+    <ProjectReference Include="..\BatchProcessor.Model\BatchProcessor.Model.csproj" />
+    <ProjectReference Include="..\BatchProcessorConfig\BatchProcessor.Config.csproj" />
+  </ItemGroup>
+
+</Project>

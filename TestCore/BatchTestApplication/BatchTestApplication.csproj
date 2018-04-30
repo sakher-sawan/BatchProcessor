@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.0.0-preview1-final" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.0.0-preview1-final" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ExifExtractor\ExifExtractor.csproj" />
+    <ProjectReference Include="..\..\ResultStore.AWS.DynamoDB\ResultStore.AWS.DynamoDB.csproj" />
+    <ProjectReference Include="..\..\WorkItemStorage.AWS.DynamoDB\WorkItemStorage.AWS.DynamoDB.csproj" />
+    <ProjectReference Include="..\BatchProcessingClient.Interface\BatchProcessingClient.Interface.csproj" />
+    <ProjectReference Include="..\BatchProcessor.Model\BatchProcessor.Model.csproj" />
+    <ProjectReference Include="..\BatchProcessorConfig\BatchProcessorConfig.csproj" />
+    <ProjectReference Include="..\ResultStore.AWS.S3\ResultStore.AWS.S3.csproj" />
+    <ProjectReference Include="..\WorkItemStorage.AWS.S3\WorkItemStorage.AWS.S3.csproj" />
+    <ProjectReference Include="..\WorkQueue.AWS.SQS\WorkQueue.AWS.SQS.csproj" />
+  </ItemGroup>
+
+</Project>

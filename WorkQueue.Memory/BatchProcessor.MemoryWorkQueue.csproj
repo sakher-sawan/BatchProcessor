@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+<PropertyGroup>
+    <TargetFrameworks>netstandard1.6;net47</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BatchProcessing.Logger\BatchProcessor.Logger.csproj" />
+    <ProjectReference Include="..\TestCore\BatchProcessor.Model\BatchProcessor.Model.csproj" />
+    <ProjectReference Include="..\TestCore\BatchProcessorConfig\BatchProcessor.Config.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+
+  <PropertyGroup>
+    <TargetFramework>net47</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.2.0-beta" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.2.0-beta" />
+    <PackageReference Include="System.Net.Http" Version="4.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\BatchProcessing.ComponentFactory\BatchProcessor.ComponentFactory.csproj" />
+    <ProjectReference Include="..\..\BatchProcessor.Azure.ServiceBusQueue.WorkQueue\BatchProcessor.Azure.ServiceBusQueue.WorkQueue.csproj" />
+    <ProjectReference Include="..\..\DataStore.AWS.DynamoDB\BatchProcessor.AWS.DynamoDB.DataStore.csproj" />
+    <ProjectReference Include="..\BatchProcessingClient.Interface\BatchProcessor.Client.csproj" />
+    <ProjectReference Include="..\BatchProcessor.Library\BatchProcessor.Library.csproj" />
+    <ProjectReference Include="..\BatchProcessor.Model\BatchProcessor.Model.csproj" />
+    <ProjectReference Include="..\BatchProcessorConfig\BatchProcessor.Config.csproj" />
+    <ProjectReference Include="..\DataStore.AWS.S3\BatchProcessor.AWS.S3.DataStore.csproj" />
+    <ProjectReference Include="..\WorkQueue.AWS.SQS\BatchProcessor.AWS.SQS.WorkQueue.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
+  </ItemGroup>
+
+</Project>

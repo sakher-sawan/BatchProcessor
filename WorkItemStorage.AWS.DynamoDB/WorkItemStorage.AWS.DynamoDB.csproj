@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.6;net47</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataStore.AWS.DynamoDB\DataStore.AWS.DynamoDB.csproj" />
+    <ProjectReference Include="..\TestCore\BatchProcessor.Model\BatchProcessor.Model.csproj" />
+    <ProjectReference Include="..\TestCore\BatchProcessorConfig\BatchProcessorConfig.csproj" />
+    <ProjectReference Include="..\TestCore\WorkItemStorage.Interface\WorkItemStorage.Interface.csproj" />
+  </ItemGroup>
+
+</Project>
