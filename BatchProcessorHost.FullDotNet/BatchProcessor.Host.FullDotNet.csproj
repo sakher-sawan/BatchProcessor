@@ -106,19 +106,19 @@
       <Project>{81ee5e80-8a0c-4570-8d53-7f4b4e9e3f79}</Project>
       <Name>BatchProcessor.Azure.ServiceBusQueue.WorkQueue</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TestCore\BatchProcessor.Library\BatchProcessor.Library.csproj">
+    <ProjectReference Include="..\BatchProcessor.Library\BatchProcessor.Library.csproj">
       <Project>{ed99e405-86bb-44d3-adf4-551b2e8eb7b7}</Project>
       <Name>BatchProcessor.Library</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TestCore\BatchProcessorConfig\BatchProcessor.Config.csproj">
+    <ProjectReference Include="..\BatchProcessorConfig\BatchProcessor.Config.csproj">
       <Project>{024f81d8-3f6f-48d7-83fb-923d43d9f050}</Project>
       <Name>BatchProcessor.Config</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TestCore\DataStore.AWS.S3\BatchProcessor.AWS.S3.DataStore.csproj">
+    <ProjectReference Include="..\DataStore.AWS.S3\BatchProcessor.AWS.S3.DataStore.csproj">
       <Project>{f8ce14a9-334b-4009-9ad1-9d996d6251fb}</Project>
       <Name>BatchProcessor.AWS.S3.DataStore</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TestCore\WorkQueue.AWS.SQS\BatchProcessor.AWS.SQS.WorkQueue.csproj">
+    <ProjectReference Include="..\WorkQueue.AWS.SQS\BatchProcessor.AWS.SQS.WorkQueue.csproj">
       <Project>{edd45e32-c105-4d9c-8a77-4899f8c77b88}</Project>
       <Name>BatchProcessor.AWS.SQS.WorkQueue</Name>
     </ProjectReference>

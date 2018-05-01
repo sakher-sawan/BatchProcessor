@@ -85,11 +85,11 @@
       <Project>{81ee5e80-8a0c-4570-8d53-7f4b4e9e3f79}</Project>
       <Name>BatchProcessor.Azure.ServiceBusQueue.WorkQueue</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TestCore\BatchProcessor.Model\BatchProcessor.Model.csproj">
+    <ProjectReference Include="..\BatchProcessor.Model\BatchProcessor.Model.csproj">
       <Project>{cd01f127-0f34-4741-95eb-bdeb865bc4b1}</Project>
       <Name>BatchProcessor.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TestCore\BatchProcessorConfig\BatchProcessor.Config.csproj">
+    <ProjectReference Include="..\BatchProcessorConfig\BatchProcessor.Config.csproj">
       <Project>{024f81d8-3f6f-48d7-83fb-923d43d9f050}</Project>
       <Name>BatchProcessor.Config</Name>
     </ProjectReference>

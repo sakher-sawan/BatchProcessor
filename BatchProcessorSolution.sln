@@ -1,27 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.15
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BatchProcessingFramework", "BatchProcessingFramework", "{1DA79604-049B-4C1B-AA3B-56F6B605DC01}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchProcessor.Client", "TestCore\BatchProcessingClient.Interface\BatchProcessor.Client.csproj", "{433601AC-70AE-4AC1-9800-73A8F697E190}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchProcessor.Client", "BatchProcessingClient.Interface\BatchProcessor.Client.csproj", "{433601AC-70AE-4AC1-9800-73A8F697E190}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchProcessor.Library", "TestCore\BatchProcessor.Library\BatchProcessor.Library.csproj", "{ED99E405-86BB-44D3-ADF4-551B2E8EB7B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchProcessor.Library", "BatchProcessor.Library\BatchProcessor.Library.csproj", "{ED99E405-86BB-44D3-ADF4-551B2E8EB7B7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchProcessor.Model", "TestCore\BatchProcessor.Model\BatchProcessor.Model.csproj", "{CD01F127-0F34-4741-95EB-BDEB865BC4B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchProcessor.Model", "BatchProcessor.Model\BatchProcessor.Model.csproj", "{CD01F127-0F34-4741-95EB-BDEB865BC4B1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchProcessor.Config", "TestCore\BatchProcessorConfig\BatchProcessor.Config.csproj", "{024F81D8-3F6F-48D7-83FB-923D43D9F050}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchProcessor.Config", "BatchProcessorConfig\BatchProcessor.Config.csproj", "{024F81D8-3F6F-48D7-83FB-923D43D9F050}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchProcessor.Host", "TestCore\BatchProcessorHost\BatchProcessor.Host.csproj", "{0CA1CD69-5C0B-4403-AE0B-ADC70ED6154D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchProcessor.Host", "BatchProcessorHost\BatchProcessor.Host.csproj", "{0CA1CD69-5C0B-4403-AE0B-ADC70ED6154D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchProcessUnitTest", "TestCore\BatchProcessUnitTest\BatchProcessUnitTest.csproj", "{FABE7CAC-7F28-4D5A-BC4A-073C9E5C4651}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchProcessUnitTest", "BatchProcessUnitTest\BatchProcessUnitTest.csproj", "{FABE7CAC-7F28-4D5A-BC4A-073C9E5C4651}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchProcessor.AWS.SQS.WorkQueue", "TestCore\WorkQueue.AWS.SQS\BatchProcessor.AWS.SQS.WorkQueue.csproj", "{EDD45E32-C105-4D9C-8A77-4899F8C77B88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchProcessor.AWS.SQS.WorkQueue", "WorkQueue.AWS.SQS\BatchProcessor.AWS.SQS.WorkQueue.csproj", "{EDD45E32-C105-4D9C-8A77-4899F8C77B88}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AWS", "AWS", "{A28647A4-758A-4528-A457-CD86CCEB5918}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchProcessor.AWS.S3.DataStore", "TestCore\DataStore.AWS.S3\BatchProcessor.AWS.S3.DataStore.csproj", "{F8CE14A9-334B-4009-9AD1-9D996D6251FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchProcessor.AWS.S3.DataStore", "DataStore.AWS.S3\BatchProcessor.AWS.S3.DataStore.csproj", "{F8CE14A9-334B-4009-9AD1-9D996D6251FB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BatchProcessor", "BatchProcessor", "{46C8795E-C0D8-4167-A3A3-76EC37F34DFE}"
 EndProject
@@ -55,6 +55,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		LICENSE.txt = LICENSE.txt
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchProcessor.AWS.DynamoDB", "ResultStore.AWS.DynamoDB\BatchProcessor.AWS.DynamoDB.csproj", "{A1D34D8A-1B64-4B18-8600-A6BEF9E86068}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkItemStorage.AWS.DynamoDB", "WorkItemStorage.AWS.DynamoDB\WorkItemStorage.AWS.DynamoDB.csproj", "{55758D21-7946-4AAD-B06A-8281AB1920EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -134,6 +138,14 @@ Global
 		{A3E08FD1-055C-430A-9254-A71734A8E97C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3E08FD1-055C-430A-9254-A71734A8E97C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3E08FD1-055C-430A-9254-A71734A8E97C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1D34D8A-1B64-4B18-8600-A6BEF9E86068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D34D8A-1B64-4B18-8600-A6BEF9E86068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D34D8A-1B64-4B18-8600-A6BEF9E86068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D34D8A-1B64-4B18-8600-A6BEF9E86068}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55758D21-7946-4AAD-B06A-8281AB1920EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55758D21-7946-4AAD-B06A-8281AB1920EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55758D21-7946-4AAD-B06A-8281AB1920EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55758D21-7946-4AAD-B06A-8281AB1920EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -162,6 +174,8 @@ Global
 		{81EE5E80-8A0C-4570-8D53-7F4B4E9E3F79} = {ED256E90-2BBB-410E-B356-53AEBFC0A28C}
 		{C3789116-497F-4AA5-B55B-C52301E47BE9} = {ED256E90-2BBB-410E-B356-53AEBFC0A28C}
 		{A3E08FD1-055C-430A-9254-A71734A8E97C} = {B6025E05-D1F1-4300-95C5-D67E8FB1290F}
+		{A1D34D8A-1B64-4B18-8600-A6BEF9E86068} = {A28647A4-758A-4528-A457-CD86CCEB5918}
+		{55758D21-7946-4AAD-B06A-8281AB1920EE} = {A28647A4-758A-4528-A457-CD86CCEB5918}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {86827A57-DEAA-44CB-BB81-DCBDC46B87DD}
